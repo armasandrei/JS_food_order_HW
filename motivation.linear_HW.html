@@ -1,0 +1,33 @@
+<script>
+
+    foodName          = "Salad"
+    foodPrice         = 15.00
+    foodAvailQ        =  parseInt(prompt(" Input Available  " + foodName + "in Stock" ))
+    foodPriceUnits         = "MDL"
+
+    clientQ           = parseInt(prompt(" How Many " + foodName + " do you want? "))
+    priceDelivery     = 30.00
+    freeDelivery      = 100.00
+
+    
+        //Here decision
+
+        if(foodAvailQ >= clientQ){
+
+         cost     = foodPrice * clientQ 
+
+          if(cost >= freeDelivery){
+
+            alert("Total Cost " + cost + foodPriceUnits +    "\n You have free delivery"   )}
+               else{
+                 costd   =  cost + priceDelivery
+
+
+                 
+          alert("Total Cost " + costd + foodPriceUnits +  "\n For delivery you pay 30" +foodPriceUnits + "\n If you want free delivery order more then 100MDL")}
+
+        } 
+        else {
+            alert("Sorry, we can offer only: " + foodAvailQ)
+        }
+</script>
